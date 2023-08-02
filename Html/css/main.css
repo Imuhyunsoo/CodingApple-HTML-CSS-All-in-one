@@ -28,6 +28,37 @@
     box-shadow: 20px 20px 10px black;
 }
 
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    float: left;
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: gray;
+    clear: both;
+}
+
 p {
     text-align: center;
 }
