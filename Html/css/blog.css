@@ -1,54 +1,27 @@
-.profile_image {
-    float: left;
-    vertical-align: top;
-}
-
-.profile_image img {
-    width: 75px;
-    height: 75px;
-}
-
-.profile_content {
-    width: 100px;
-    height: 50px;;
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.profile {
-    float: top;
-    height: 75px;
-}
-
-.content {
-    clear: both;
-    float: top;
-    
-}
-
-.board {
+.blog-content {
     width: 80%;
-    height: 300px;
-    float: left;
-}
-
-.image {
-    width: 20%;
-    height: 300px;
-    float: left;
-}
-
-.image img {
-    padding: auto;
-    width: 200px;
     height: 200px;
-    display: block; 
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    float: left;
 }
 
-p {
-    margin: 3px;
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    display: block;
+    float: left;
+}
+
+.blog-name {
+    float: left;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
