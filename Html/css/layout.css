@@ -1,9 +1,21 @@
+@font-face {
+    font-family: 'nanumfont';
+    font-weight: 800;
+    src: url(../font/NanumSquareEB.woff);
+}
+
 div {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    font-family: 'gulim';
+    font-weight: 900;
+}
+
+p, h4, h3, h2, h1, span {
+    transform: rotate(0.03deg);
 }
 
 .main-background {
@@ -68,7 +80,6 @@ body {
     max-width: 600px;
     background: gainsboro;
     color: black;
-    font-family:'Times New Roman', Times, serif;
     position: relative;
     top: 150px;
     margin: auto;
