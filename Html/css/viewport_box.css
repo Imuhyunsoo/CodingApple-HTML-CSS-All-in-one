@@ -1,0 +1,32 @@
+html {
+    margin: 0px;
+}
+
+.sub-box {
+    width: 200px;
+    height: 250px;
+    font-size: 14px;
+    margin: 50px 50px 50px 50px;
+    float: left;
+    text-align: center;
+}
+
+.sub-box-title {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width : 1500px) {
+    .sub-box:nth-child(3) {
+        clear : both;
+        float: left;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .sub-box{
+        clear : both;
+        float: none;
+    }
+}
