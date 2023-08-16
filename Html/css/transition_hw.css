@@ -1,0 +1,92 @@
+.product-container {
+    width: 80%;
+    height: 300px;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+.product-container div {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 40px;
+}
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+@keyframes cliptext {
+    0%{
+        clip-path:polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+        transform:translateY(100%);
+    }
+    95%{
+        transform:translateY(0%);
+    }
+    100%{
+        clip-path:polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.overlay:hover {
+    animation: cliptext 1s;
+    opacity: 1;
+}
+
+.overlay: {
+    animation: cliptext 1s;
+    opacity: 1;
+}
+
+.overlay p {
+    color: white;
+    margin: 0px;
+}
+
+.overlay div {
+    padding-top: 15px;
+    padding-left: 15px;
+}
