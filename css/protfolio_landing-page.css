@@ -179,7 +179,7 @@ button:hover {
     background-color: darkgrey;
 }
 
-.images:hover {
+.bottom-img-contents:hover .images{
     transform: scale(0.9);
 }
 
