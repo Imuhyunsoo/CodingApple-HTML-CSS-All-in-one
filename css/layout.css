@@ -162,10 +162,6 @@ div.main-background .custom {
     color: skyblue;
 }
 
-div.main-background p.custom {
-    color: red;
-}
-
 @media screen and (max-width: 768px) {
     .main-title {
         font-size: 20px;
