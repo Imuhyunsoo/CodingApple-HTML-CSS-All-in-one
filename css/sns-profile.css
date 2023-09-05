@@ -5,24 +5,28 @@ div {
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #f7f9fc;
 }
 html {
-	line-height : 1.55; /* 기본 행간 높이 */
+	line-height : 1.55;
 }
 
 h5, p {
     margin-bottom: 3px;
 }
 
+.bg-skyblue{
+    background-color: #6fbaf8;
+}
+
+.profile-intro {
+    border-left: 2px solid gainsboro;
+}
+
 .background-gray {
     padding: 30px;
     width: 100%;
     height: 100%;
-    background-color: #f7f9fc;
-}
-
-.background-skyblue {
-    background-color: #6fbaf8;
 }
 
 .btn {
@@ -34,9 +38,9 @@ h5, p {
 
 .profile-block {
     background-color: white;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding-top: auto;
+    padding-bottom: auto;
     
 }
 
@@ -55,22 +59,15 @@ h5, p {
 .profile-intro_content {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .profile-intro_content h5 {
     width: 100px;
     margin-left: 30px;
     margin-right: 70px;
-    margin-bottom: 15px;
 }
 
-.profile-nav {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    
-}
 
 .profile-nav a, .profile-nav div {
     font-size: 18px;
@@ -80,9 +77,6 @@ h5, p {
 }
 
 .profile-border {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     height: 3px;
     color: #6fbaf8;
 }
@@ -116,8 +110,10 @@ h5, p {
 }
 
 .profile-skills_buttongrop {
+    margin: 0px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0; 
 }
 
 .profile-skills_buttongrop button {
@@ -125,6 +121,7 @@ h5, p {
     margin-right: 5px;
     border-radius: 25px;
     border: 1.5px solid gray;
+    font-size: 15px;
 }
 
 .botton-80 {
@@ -152,6 +149,14 @@ h5, p {
     font-size: 13px;
     color: #6fbaf8;
 }
-@media screen and (max-width : 978px) {
-    
+
+@media screen and (max-width : 991px) {
+
+    .profile-border, .profile-nav, .profile-border {
+        max-width: 600px;
+    }
+
+    .profile-intro {
+        border-left: 0px
+    }
 }
