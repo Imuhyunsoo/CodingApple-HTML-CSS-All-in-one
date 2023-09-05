@@ -26,13 +26,16 @@ h5, p {
 }
 
 .btn {
-
     width: 100px;
     border: 0px;
 }
 
-.profile-intro {
+.profile-block {
     background-color: white;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .address {
@@ -57,6 +60,68 @@ h5, p {
     margin-left: 30px;
     margin-right: 70px;
     margin-bottom: 15px;
+}
+
+.profile-nav {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+
+.profile-nav a, .profile-nav div {
+    font-size: 18px;
+    color: #6fbaf8;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.profile-border {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    color: #6fbaf8;
+}
+
+.profile-works {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.profile-works h5, .profile-about h5, .profile-about p, .profile-works p:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+.bar-color {
+    background-color: #6fbaf8;
+}
+
+.profile-about {
+    margin-top: 15px;
+    padding: 30px;
+}
+
+.profile-about_border {
+    margin-top: 50px;
+    border: 3px solid #f7f9fc;
+}
+
+.profile-skills_buttongrop {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-skills_buttongrop button {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 25px;
+    border: 1.5px solid gray;
+}
+
+.botton-80 {
+    width: 80px;
 }
 
 @media screen and (max-width : 978px) {
