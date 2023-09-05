@@ -28,6 +28,8 @@ h5, p {
 .btn {
     width: 100px;
     border: 0px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .profile-block {
@@ -108,6 +110,11 @@ h5, p {
     border: 3px solid #f7f9fc;
 }
 
+.profile-skills {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
 .profile-skills_buttongrop {
     margin-left: auto;
     margin-right: auto;
@@ -124,6 +131,27 @@ h5, p {
     width: 80px;
 }
 
+.profile-footer {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding: 30px;
+    display: block;
+    text-align: center;
+}
+
+.profile-footer i {
+    margin-bottom: 20px;
+    color: #6fbaf8;
+}
+
+.profile-footer p {
+    margin-bottom: 20px;
+}
+
+.profile-footer p:nth-child(4) {
+    font-size: 13px;
+    color: #6fbaf8;
+}
 @media screen and (max-width : 978px) {
     
 }
