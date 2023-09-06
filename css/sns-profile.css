@@ -41,6 +41,7 @@ h5, p {
     margin: auto;
     padding-top: auto;
     padding-bottom: auto;
+    border-radius: 15px;
     
 }
 
@@ -86,7 +87,8 @@ h5, p {
     padding: 30px;
 }
 
-.profile-works h5, .profile-about h5, .profile-about p, .profile-works p:nth-child(5) {
+.profile-works h5, .profile-about h5, .profile-about p, 
+.profile-works p:nth-child(5), .team-members-title {
     margin-bottom: 20px;
 }
 
@@ -95,7 +97,8 @@ h5, p {
 }
 
 .profile-about {
-    margin-top: 15px;
+    min-height: 600px;
+    margin-top: 30px;
     padding: 30px;
 }
 
@@ -130,7 +133,7 @@ h5, p {
 
 .profile-footer {
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     padding: 30px;
     display: block;
     text-align: center;
@@ -150,6 +153,11 @@ h5, p {
     color: #6fbaf8;
 }
 
+.profile_intro-image img {
+    width: 100px;
+    height: 100px;
+}
+
 @media screen and (max-width : 991px) {
 
     .profile-border, .profile-nav, .profile-border {
@@ -158,5 +166,13 @@ h5, p {
 
     .profile-intro {
         border-left: 0px
+    }
+
+    .profile-about {
+    min-height: 0px;
+    }
+    
+    .team-members {
+        display: none;
     }
 }
