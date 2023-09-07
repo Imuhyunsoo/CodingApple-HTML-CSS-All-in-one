@@ -1,0 +1,40 @@
+.pseudo::first-letter {
+    content: 'Hello';
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo::first-line {
+    content: 'Hello';
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo::after {
+    content: 'Hello';
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo::before {
+    content: 'Hello';
+    color: red;
+    font-size: 30px;
+}
+
+.product-container::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.input-file::file-selector-buttom {
+    background: skyblue;
+    border: none;
+    padding: 20px;
+}
+
+.input-file::file-selector-buttom:hover {
+    background: blue;
+}
