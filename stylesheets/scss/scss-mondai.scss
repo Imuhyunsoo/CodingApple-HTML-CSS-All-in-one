@@ -1,0 +1,80 @@
+@use '_reset';
+
+.block-list {
+    width: 400px;
+    height: 150px;
+    font-size: 15px;
+    list-style:none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    li {
+        padding: 10px;
+        border: 1px solid gainsboro;
+    }
+}
+
+.active {
+    background-color: powderblue;
+}
+
+.alert-list {
+    padding: 10px;
+}
+
+@mixin alert-block($background-color) {
+    width: 800px;
+    height: 60px;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: $background-color;
+
+    p {
+        margin: 0px
+    }
+}
+
+.alert-block_green {
+    @include alert-block(olivedrab);
+}
+
+.alert-block_blue {
+    @include alert-block(skyblue);
+}
+
+.alert-block_yello {
+    @include alert-block(yellow);
+}
+
+@mixin col($width-size) {
+    float: left;
+    width: $width-size;
+}
+
+.row {
+    div {
+        background-color: lavender;
+        border: 1px solid gainsboro;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .col-6 {
+        @include col(50%);
+    }
+    .col-4 {
+        @include col(33.33%);
+    }
+    .col-3 {
+        @include col(25%);
+    }
+    .col-2 {
+        @include col(20%);
+    }
+    .col-1 {
+        @include col(8.5%);
+    }
+    clear: both;
+}

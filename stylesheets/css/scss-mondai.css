@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.block-list {
+  width: 400px;
+  height: 150px;
+  font-size: 15px;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.block-list li {
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+
+.active {
+  background-color: powderblue;
+}
+
+.alert-list {
+  padding: 10px;
+}
+
+.alert-block_green {
+  width: 800px;
+  height: 60px;
+  font-size: 16px;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: olivedrab;
+}
+.alert-block_green p {
+  margin: 0px;
+}
+
+.alert-block_blue {
+  width: 800px;
+  height: 60px;
+  font-size: 16px;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: skyblue;
+}
+.alert-block_blue p {
+  margin: 0px;
+}
+
+.alert-block_yello {
+  width: 800px;
+  height: 60px;
+  font-size: 16px;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: yellow;
+}
+.alert-block_yello p {
+  margin: 0px;
+}
+
+.row {
+  clear: both;
+}
+.row div {
+  background-color: lavender;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin-top: 20px;
+}
+.row .col-6 {
+  float: left;
+  width: 50%;
+}
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+}
+.row .col-3 {
+  float: left;
+  width: 25%;
+}
+.row .col-2 {
+  float: left;
+  width: 20%;
+}
+.row .col-1 {
+  float: left;
+  width: 8.5%;
+}
