@@ -11,3 +11,63 @@ $nomal-size : 16px;   // '%' 사용시 에러 발생
     background-color: $sub-color;
     font-size: $nomal-size + 2px;
 }
+
+.main-bg h4 {
+    font-size: 16px;
+}
+
+.main-bg button {
+    color: red;
+}
+
+.main-bg {
+    width: 100px;
+    h4 {
+        font-size: 16px;
+    }
+    button {
+        color: red;
+    }
+}
+
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+.btn-red {
+    @extend %btn;
+    color: red;
+}
+
+.btn-blue {
+    @extend %btn;
+    color: blue;
+}
+
+%block {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.block-green {
+    @extend %block;
+    background:green
+}
+
+.block-red {
+    @extend %block;
+    background:red
+}
+
+.block-blue {
+    @extend %block;
+    background:blue
+}
