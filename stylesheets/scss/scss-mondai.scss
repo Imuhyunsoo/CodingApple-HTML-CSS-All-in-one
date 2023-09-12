@@ -1,21 +1,20 @@
 @use '_reset';
 
 .block-list {
-    width: 400px;
+    width: 600px;
     height: 150px;
     font-size: 15px;
-    list-style:none;
-    padding-left: 10px;
-    padding-right: 10px;
 
     li {
-        padding: 10px;
-        border: 1px solid gainsboro;
+        list-style: none;
+        padding: 15px;
+        border: 1px solid #eee;
     }
-}
 
-.active {
-    background-color: powderblue;
+    .active {
+        background-color: powderblue;
+        color: white;
+    }
 }
 
 .alert-list {
@@ -30,6 +29,7 @@
     border-radius: 10px;
     margin-top: 20px;
     background-color: $background-color;
+    color: #eee;
 
     p {
         margin: 0px
@@ -45,36 +45,50 @@
 }
 
 .alert-block_yello {
-    @include alert-block(yellow);
+    @include alert-block(orange);
 }
 
-@mixin col($width-size) {
+@mixin column($width-size) {
     float: left;
     width: $width-size;
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: lavender;
+    border: 1px solid gainsboro;
 }
 
 .row {
-    div {
-        background-color: lavender;
-        border: 1px solid gainsboro;
-        padding: 10px;
-        margin-top: 20px;
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            @include column(8.3325% * $i);
+        }
     }
 
-    .col-6 {
-        @include col(50%);
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @media screen and (min-width : 1200px) {
+                @include column(8.3325% * $i);
+                color: blue;
+            }
+        }
+        .col-md-#{$i} {
+            @media screen and (max-width : 1200px) {
+                @include column(8.3325% * $i);
+                color: red;
+            }
+        }
+        .col-sm-#{$i} {
+            @media screen and (max-width : 992px) {
+                @include column(8.3325% * $i);
+                color: green;
+            }
+        }
+        .col-xs-#{$i} {
+            @media screen and (max-width : 768px) {
+                @include column(8.3325% * $i);
+                color: white;
+            }
+        }
     }
-    .col-4 {
-        @include col(33.33%);
-    }
-    .col-3 {
-        @include col(25%);
-    }
-    .col-2 {
-        @include col(20%);
-    }
-    .col-1 {
-        @include col(8.5%);
-    }
-    clear: both;
 }
