@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+
+.ani-text {
+    text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(00px);
+    }
+}
+
+.btn {
+    width: 100px;
+    border: 0px;
+    border-radius: 5px;
+    background: skyblue;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    animation-name: wave;
+    animation-duration: 0.5s;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-10deg);
+    }
+    35% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.plus {
+    font-size: 50px;
+    text-align: center;
+}
+
+.plus:hover {
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    20% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(40deg) scale(1.5);;
+    }
+}
+
+.menu-box {
+    position: absolute;
+    left: -200px;
+    width: 400px;
+    height: 500px;
+    background: grey;
+    transition: left 1s;
+}
+
+.menu-box p {
+    padding-top: 30px;
+    color: white;
+
+}
+
+.right {
+    margin-right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.left {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.menu-box:hover .left {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-box:hover .right{
+    text-align: center;
+}
+
+.menu-box:hover {
+    left: 0px;
+}
+
+@keyframes slide {
+    30% {
+        transform: translate(200px);
+    }
+    50% {
+        transform: skew(-20deg) translate(200px);
+    }
+    100% {
+        transform: translateX(150px);
+    }
+}
