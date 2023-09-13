@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.multiRootWorkspaceName": "HTML:CSS All-in-one"
+  "liveServer.settings.multiRootWorkspaceName": "HTML:CSS All-in-one",
+  "liveSassCompile.settings.autoprefix": []
 }

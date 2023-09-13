@@ -40,16 +40,20 @@ body {
 .btn:hover {
     animation-name: wave;
     animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes wave {
     0% {
-        transform: rotate(-10deg);
+        transform: rotate(0deg);
     }
-    35% {
+    25% {
         transform: rotate(10deg);
     }
-    70% {
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
         transform: rotate(-10deg);
     }
     100% {
@@ -64,32 +68,32 @@ body {
 
 .plus:hover {
     animation-name: spin;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
     20% {
         transform: rotate(-20deg);
     }
     100% {
-        transform: rotate(40deg) scale(1.5);;
+        transform: rotate(45deg) scale(1.5);;
     }
 }
 
 .menu-box {
-    position: absolute;
-    left: -200px;
-    width: 400px;
+    position: fixed;
+    transform: translateX(-150px);
+    width: 300px;
     height: 500px;
     background: grey;
-    transition: left 1s;
-}
-
-.menu-box p {
-    padding-top: 30px;
+    transition: transform 1s;
+    padding: 25px;
     color: white;
-
+    text-align: center;
 }
 
 .right {
@@ -114,17 +118,18 @@ body {
 }
 
 .menu-box:hover {
-    left: 0px;
+    transform: translateX(0px);
+    text-align: center;
 }
 
 @keyframes slide {
-    30% {
-        transform: translate(200px);
+    0% {
+        transform: translate(-250px);
     }
     50% {
-        transform: skew(-20deg) translate(200px);
+        transform: skew(-30deg)  translate(150px);
     }
     100% {
-        transform: translateX(150px);
+        transform: translateX(100px);
     }
 }
