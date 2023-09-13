@@ -32,3 +32,15 @@ body {
 .grid-content {
     grid-area: content;
 }
+
+@media screen and (max-width : 768px) {
+    .grid-container {
+        grid-template-areas: 
+        "header header header header header header"
+        "side side side side side side"
+        "content content content content content content"
+        "content content content content content content"
+        "content content content content content content"
+        "content content content content content content"
+    }
+}
