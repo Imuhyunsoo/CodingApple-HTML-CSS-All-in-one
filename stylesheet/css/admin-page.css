@@ -1,0 +1,54 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+html {
+  line-height: 1.55;
+}
+
+i {
+  color: white;
+}
+
+.font-gray {
+  color: gray;
+}
+
+.search-container {
+  display: inline-block;
+  overflow: hidden;
+}
+.search-container .btn {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.form-control {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.navbar-mymenu .btn {
+  position: relative;
+}
+.navbar-mymenu .btn i {
+  color: gray;
+  z-index: 1;
+}
+.navbar-mymenu .btn span {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  background: red;
+  color: white;
+  padding: 1px;
+  font-size: 9px;
+  border-radius: 3px;
+}
+.navbar-mymenu a {
+  color: gray;
+}
