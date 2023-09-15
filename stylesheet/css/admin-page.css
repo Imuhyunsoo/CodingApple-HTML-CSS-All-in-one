@@ -4,6 +4,7 @@ div {
 
 body {
   margin: 0px;
+  height: 5000px;
 }
 
 html {
@@ -51,4 +52,18 @@ i {
 }
 .navbar-mymenu a {
   color: gray;
+}
+
+.sidebar {
+  position: relative;
+}
+.sidebar .sidebar-menu {
+  top: 0px;
+  height: 100%;
+  position: fixed;
+  background: #004080;
+}
+.sidebar .sidebar-menu .btn {
+  display: flex;
+  margin-top: 15px;
 }

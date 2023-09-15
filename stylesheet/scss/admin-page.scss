@@ -11,6 +11,7 @@ div {
 
 body {
     margin: 0px;
+    height: 5000px;
 }
 html {
 	line-height : 1.55;
@@ -63,5 +64,21 @@ i {
 
     a {
         color: $sub-font;
+    }
+}
+
+.sidebar {
+    position: relative;
+
+    .sidebar-menu {
+        top:0px;
+        height: 100%;
+        position: fixed;
+        background: #004080;
+
+        .btn {
+            display: flex;
+            margin-top: 15px;
+        }
     }
 }
