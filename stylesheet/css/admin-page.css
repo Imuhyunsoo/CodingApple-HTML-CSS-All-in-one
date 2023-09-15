@@ -3,8 +3,10 @@ div {
 }
 
 body {
+  position: relative;
   margin: 0px;
   height: 5000px;
+  background-color: rgba(128, 128, 128, 0.125);
 }
 
 html {
@@ -27,10 +29,29 @@ i {
   border-radius: 0px 10px 10px 0px;
 }
 
-.form-control {
-  border-radius: 10px 0px 0px 10px;
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+.form-control {
+  border-radius: 10px 0px 0px 10px;
+  align-items: center;
+}
+
+.content, .container-fluid {
+  margin-left: 50px;
+}
+
+.navbar {
+  background: white;
+}
+
+.navbar-mymenu {
+  border-radius: 5px;
+}
 .navbar-mymenu .btn {
   position: relative;
 }
@@ -54,16 +75,105 @@ i {
   color: gray;
 }
 
+.shadow {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .sidebar {
-  position: relative;
+  width: 50px;
 }
 .sidebar .sidebar-menu {
+  text-align: center;
+  position: fixed;
+  left: 0px;
   top: 0px;
   height: 100%;
-  position: fixed;
+  z-index: 1;
   background: #004080;
 }
 .sidebar .sidebar-menu .btn {
   display: flex;
   margin-top: 15px;
+}
+
+.graph {
+  background: white;
+}
+
+.graph-box {
+  width: 70%;
+}
+
+.dash-board, .containers {
+  display: flex;
+}
+
+.dash-board_blue {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  border-left: 5px solid skyblue;
+  align-items: center;
+  background: white;
+}
+.dash-board_blue i {
+  color: gray;
+}
+
+.dash-board_green {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  border-left: 5px solid green;
+  align-items: center;
+  background: white;
+}
+.dash-board_green i {
+  color: gray;
+}
+
+.dash-board_purple {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  border-left: 5px solid purple;
+  align-items: center;
+  background: white;
+}
+.dash-board_purple i {
+  color: gray;
+}
+
+.dash-board_yellow {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  border-left: 5px solid yellow;
+  align-items: center;
+  background: white;
+}
+.dash-board_yellow i {
+  color: gray;
+}
+
+.tasks {
+  width: 30%;
+  height: 225px;
+}
+.tasks ol.list-group-numbered {
+  list-style-type: none;
+}
+
+ol.list-group-numbered {
+  list-style-type: none;
+}
+
+.badge {
+  float: right;
 }
