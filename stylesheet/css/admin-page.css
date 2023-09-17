@@ -24,6 +24,7 @@ i {
 .search-container {
   display: inline-block;
   overflow: hidden;
+  position: absolute;
 }
 .search-container .btn {
   border-radius: 0px 10px 10px 0px;
@@ -170,10 +171,20 @@ i {
   list-style-type: none;
 }
 
-ol.list-group-numbered {
-  list-style-type: none;
-}
-
 .badge {
   float: right;
+}
+
+@media screen and (max-width: 991px) {
+  .dash-board {
+    display: block;
+  }
+  .dash-board_blue, .dash-board_green,
+  .dash-board_purple, .dash-board_yellow {
+    width: 96%;
+  }
+  .dash-board_blue i, .dash-board_green i,
+  .dash-board_purple i, .dash-board_yellow i {
+    text-align: right;
+  }
 }
