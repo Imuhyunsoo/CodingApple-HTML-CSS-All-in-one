@@ -49,6 +49,7 @@ i {
 .form-control {
     border-radius: 10px 0px 0px 10px;
     align-items: center;
+    transition: width 1s;
 }
 
 .content, .container-fluid {
@@ -100,15 +101,26 @@ i {
     .sidebar-menu {
         text-align: center;
         position: fixed;
-        left: 0px;
+        left: -110px;
         top:0px;
         height: 100%;
         z-index: 1;
         background: #004080;
+        transition: left 1s;
 
         .btn {
-            display: flex;
+            display: block;
+            width: 150px;
             margin-top: 15px;
+            align-items: center;
+            //text-align: left;
+            text-align: right;
+
+            span {
+                margin-left: 10px;
+                margin-right: 30px;
+                color: $main-icon_color;
+            }
         }
     }
 }
@@ -167,6 +179,7 @@ i {
     float: right;
 }
 
+
 @media screen and (max-width: 991px) {
     .dash-board {
         display: block;
@@ -179,4 +192,12 @@ i {
             text-align: right;
         }
     }
+}
+
+input[type="search"]:focus {
+    width: 400px; /* 원하는 크기로 조정하세요 */
+}
+
+.sidebar-menu:hover {
+    left: 0px;
 }
