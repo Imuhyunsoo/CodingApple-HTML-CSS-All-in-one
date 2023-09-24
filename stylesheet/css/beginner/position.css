@@ -1,0 +1,60 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    padding: 1px;
+    background-image: url(/image/shoes.jpeg);
+    background-size: cover;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: brightness(70%);  박스 보정 입히기 */
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main-content {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    /* 기준점 지정 */
+    /* position: static; 좌표 이동 X */
+    /* position: fixed; 현재 화면이 기준 */
+    position: absolute;
+    /* bottom: 20px;
+    right: 20px; */
+    /* 가운데 정렬 */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    /* left: -100px; */
+}
+
+.sub-container {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -30px;
+    margin: auto;
+    width: 600px;
+    padding: 30px;
+    background: #eee;
+    text-align: center;
+}
