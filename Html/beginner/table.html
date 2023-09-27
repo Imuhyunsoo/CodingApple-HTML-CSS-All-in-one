@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/stylesheet/css/beginner/table.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <th><p>name</p><p>name</p></th>
+                <th style="vertical-align: middle;">age</th>
+                <th>year</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <p style="font-size: 50px;">greetings
+            <span style="font-size: 20px; vertical-align: top;">안녕</span>
+        </p>
+        <p style="font-size: 50px;">greetings
+            <span style="font-size: 20px; vertical-align: middle;">안녕</span>
+        </p>
+        <p style="font-size: 50px;">greetings
+            <span style="font-size: 20px; vertical-align: middle;">안녕</span>
+        </p>
+        <p style="font-size: 50px;">greetings
+            <span style="font-size: 20px; vertical-align: super;">안녕</span>
+        </p>
+        <p style="font-size: 50px;">greetings
+            <span style="font-size: 20px; vertical-align: sub;">안녕</span>
+        </p>
+    </div>
+    <div> 
+        <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32"> 
+        <span style="vertical-align: top;">
+            image with a default alignment.
+        </span>
+    </div> 
+
+    <div style="display: table;">
+        <div style="display: table-row;">
+            <div style="display: table-cell;"></div>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="shopping-box">
+            <h4 class="title">Your shopping cart</h4>
+            <div class="shopping-list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">ITEM</th>
+                            <th>AMOUNT</th>
+                            <th>PRICE</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="/image/A01.jpg"></td>
+                            <td class="item-name">
+                                <p class="brand">SONY</p>
+                                <span>FE 70-200 mm F2.8 GM OSS</span>
+                            </td>
+                            <td class="amount">1</td>
+                            <td>¥ 197900</td>
+                            <td class="total">¥ 197900</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/image/ILCE-7K.jpg"></td>
+                            <td class="item-name">
+                                <p class="brand">SONY</p>
+                                <span>FE 70-200 mm F2.8 GM OSS</span>
+                            </td>
+                            <td class="amount">1</td>
+                            <td>¥ 197900</td>
+                            <td class="total">¥ 197900</td>
+                        </tr>
+                        <tr>
+                            <td class="total" colspan="5">¥ 296800</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="event-box">
+                <a href="#">Edit your shopping cart</a>
+                <button class="button">Choose pay ment method</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

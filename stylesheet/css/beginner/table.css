@@ -1,0 +1,90 @@
+/* td, th {
+    border: 1px solid black;
+} */
+
+body {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.background {
+    width: 100%;
+    height: 600px;
+    background: powderblue;
+}
+
+.shopping-box {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+.shopping-list {
+    width: 100%;
+    background: white;
+    text-align: center;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.title {
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.shopping-list img {
+    width: 100px;
+}
+
+.table {
+    width: 100%;
+    color: turquoise;
+    border-style: none;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid powderblue;
+}
+
+
+.item-name {
+    text-align: left;
+}
+
+.total {
+    color: cadetblue;
+    text-align: right;
+}
+
+.brand {
+    color: black;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.amount {
+    text-align: right;
+}
+
+.event-box {
+    padding-top: 20px;
+}
+
+.button {
+    float: right;
+    padding: 15px;
+    font-size: 15px;
+    background: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+a {
+    color: cadetblue;
+}
