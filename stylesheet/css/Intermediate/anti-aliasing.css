@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'nanumsquare';
+    src: url(/font/NanumSquareEB.woff);
+    font-weight: 800;
+}
+
+/* 구버전 웹 브라우저 전용 */
+@font-face {
+    font-family: 'nanumsquare';
+    font-weight: 800;
+    src: url(NanumSquareR.eot);
+    src: url(NanumSquareR.eot?#iefix) format('embedded-opentype'),
+        url(NanumSquareR.woff) format('woff')
+}
+
+body {
+    margin: 0px;
+    font-family: 'nanumsquare', 'gulim', 'dotum', 'arial';
+}
+
+/* 폰트를 부드럽게 만들어준다. */
+p,h4,h3,h2,h1,span {
+    transform: rotate(0.03deg);
+}
