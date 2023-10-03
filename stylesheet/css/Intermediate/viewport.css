@@ -1,0 +1,153 @@
+div {
+    /* width padding, border 포함함 */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* 숙련자들은 chome, fierfox 등의 브라우저 호환성 
+대비 코드를 미리 위에 추가한다. */
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    padding: 1px;
+    background-image: url(/image/shoes.jpeg);
+    background-size: cover;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: brightness(70%);  박스 보정 입히기 */
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main-content {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    /* 기준점 지정 */
+    /* position: static; 좌표 이동 X */
+    /* position: fixed; 현재 화면이 기준 */
+    position: absolute;
+    /* bottom: 20px;
+    right: 20px; */
+    /* 가운데 정렬 */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    /* left: -100px; */
+}
+
+.explain-box {
+    width: 80%;
+    /* PC 사이즈 최대 크기 지정 */
+    max-width: 700px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -30px;
+    margin: auto;
+    padding: 20px;
+    background: #eee;
+    text-align: center;
+    /* z-index: 1; 붕 떠있는 요소들중 우선순위 결정(높을수록 우선순위 높다)*/
+    /* padding, border 포함안함
+    box-sizing: content-box; */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* 우측 정렬 */
+    /* justify-content: flex-end; */
+    /* 좌측 정렬 */
+    /* justify-content: flex-start; */
+    /* 요소간 간격을 맞춰서 가운데 정렬 */
+    /* justify-content: space-between; */
+    /* 세로 배치 */
+    /* flex-direction: column; */
+    /* 가로 배치 */
+    /* flex-direction: row; */
+    /* 요소가 부모 요소보다 큰 경우 block 처리 된다. */
+    /* flex-wrap: wrap; */
+    /* 상하 정렬 */
+    /* align-items: center; */
+    /* 밑으로 정렬 */
+    /* align-items: end; */
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    margin: 5px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: end;
+    background: peachpuff;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+}
+
+.nav-logo {
+    font-size: 35px;
+    width: 100px;
+    font-weight: 900;
+}
+
+/* .test {
+    width: 10rem;
+    height: 50px;
+    background: gray;
+} */
+
+/* 모바일 화면일때 적용할 속성 값(브라우저 폭이 1200px) */
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+    .nav-item {
+        font-size: 20px;
+    }
+}
+
+/* only 구버전 전용도 적용할 수 있게 해준다 */
+@media only screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 10px;
+    }
+}
