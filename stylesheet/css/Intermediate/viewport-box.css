@@ -1,4 +1,12 @@
-.container div {
+.product-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-container div {
     display: inline-block;
     width: 24.5%;
     text-align: center;
@@ -7,15 +15,15 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .container div {
-        padding: 10px;
+    .product-container div {
+        max-width: 600px;
         width: 49.5%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .container div {
-        padding: 5px;
+    .product-container div {
+        max-width: 400px;
         width: 100%;
     }
 }
