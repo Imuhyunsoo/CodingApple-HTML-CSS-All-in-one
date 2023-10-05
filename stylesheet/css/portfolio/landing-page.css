@@ -12,6 +12,7 @@ div {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .top {
@@ -46,50 +47,50 @@ div {
     vertical-align: bottom;
 }
 
-.first {
+.service {
     text-align: center;
     font-size: 12px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.first-title {
+.service-title {
     font-size: 16px;
     margin: 0px;
 }
 
-.first-content {
+.service-content {
     margin: 10px;
     display: block;
 }
 
-.introduction {
+.layout {
     background: dodgerblue;
     color: white;
     text-align: center;
     padding: 50px;
 }
 
-.introduction-title {
+.layout-title {
     padding-bottom: 30px;
 }
 
-.introduction-title_setumei {
+.layout-title_setumei {
     margin: 0px;
 }
 
-.introduction-content {
+.layout-content {
     width: 80%;
     display: flex;
     margin: auto;
 }
 
-.introduction-content_item i {
+.layout-content_item i {
     color: dodgerblue;
     margin-top: 25%;
 }
 
-.introduction-content_item {
+.layout-content_item {
     width: 100%;
     margin: 10px;
 }
@@ -128,7 +129,8 @@ div {
 }
 
 .blue {
-    background-image: url(/image/portfolio-1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), 
+    url(/image/portfolio-1.jpg);
     background-size: cover;
 }
 .indigo {
