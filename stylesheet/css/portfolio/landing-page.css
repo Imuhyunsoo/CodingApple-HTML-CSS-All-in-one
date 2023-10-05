@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.button {
+    background: grey;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(cadetblue, dodgerblue);
+    padding: 70px;
+    padding-bottom: 0px;
+}
+
+.top-content {
+    width: 50%;
+    color: white;
+    font-size: 12px;
+}
+
+.top-content-title {
+    margin: 0px;
+    font-size: 28px;
+}
+
+.non-block {
+    width: 20%;
+}
+
+.top-image {
+    width: 30%;
+}
+
+.top-image img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.first {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.first-title {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.first-content {
+    margin: 10px;
+    display: block;
+}
+
+.introduction {
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.introduction-title {
+    padding-bottom: 30px;
+}
+
+.introduction-title_setumei {
+    margin: 0px;
+}
+
+.introduction-content {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.introduction-content_item i {
+    color: dodgerblue;
+    margin-top: 25%;
+}
+
+.introduction-content_item {
+    width: 100%;
+    margin: 10px;
+}
+
+.item-background {
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.item-word {
+    margin: 2.5px;
+}
+
+.item-mean {
+    font-size: 12px;
+}
+
+.animation {
+    padding: 30px;
+    height: 800px;
+}
+
+.animation-title {
+    text-align: center;
+    font-size: 12px;
+}
+
+.animation-title_comment {
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.blue {
+    background-image: url(/image/portfolio-1.jpg);
+    background-size: cover;
+}
+.indigo {
+    background-image: url(/image/portfolio-2.jpg);
+    background-size: cover;
+}
+.skyblue {
+    background-image: url(/image/portfolio-3.jpg);
+    background-size: cover;
+}
+.brown {
+    background-image: url(/image/portfolio-4.jpg);
+    background-size: cover;
+}
+
+.animation-box {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+
+.animation-box_image {
+    float: left;
+    width: 50%;
+    height: 80%;
+    color: white;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.animation-box_title {
+    font-size: 18px;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    padding: 30px;
+}
+
+.footer-items {
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+
+.footer-items_icon {
+    width: 33%;
+    margin: 30px;
+}
+
+.icon-background {
+    background: dodgerblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+}
+
+.icon-background i {
+    margin-top: 25%;
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+.footer-company {
+    text-align: center;
+}
