@@ -113,6 +113,7 @@ div {
 .animation {
     padding: 30px;
     height: 800px;
+    padding-bottom: 0px;
 }
 
 .animation-title {
@@ -145,14 +146,13 @@ div {
 
 .animation-box {
     width: 90%;
-    height: 50%;
+    height: 40%;
     margin: auto;
 }
 
 .animation-box_image {
-    float: left;
-    width: 50%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     color: white;
     padding: 30px;
     font-size: 12px;
@@ -195,4 +195,32 @@ div {
 
 .footer-company {
     text-align: center;
+}
+
+.animation-block {
+    float: left;
+    width: 50%;
+    height: 100%;
+    transition: padding 0.5s;
+}
+
+.animation-block:hover {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        display: block;
+    }
+
+    .top-content {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .top-image {
+        width: 50%;
+        margin: auto;
+    }
 }
