@@ -1,0 +1,79 @@
+div {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    background: #f7f9fc;
+    margin: 0px;
+    height: 1800px;
+}
+
+.white-box {
+    width: 90%;
+    background: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.color-blue {
+    color: #6fbaf8;
+    font-size: 18px;
+}
+
+.color-black {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+.btn {
+    width: 100px;
+    color: white;
+    background: #6fbaf8;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-white {
+    width: 100px;
+    height: 40px;
+    color: black;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.tab {
+    width: 90%;
+    margin: auto;
+    color: #6fbaf8;
+    text-align: center;
+}
+
+.progress {
+    background: gainsboro;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.progress-bar {
+    height: 100%;
+    margin: 0px;
+    background: #6fbaf8
+}
+
+.tab-profile p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
+}
