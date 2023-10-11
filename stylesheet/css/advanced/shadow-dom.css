@@ -72,8 +72,4 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background: pink;
-    inline-size: 75%;
-}
-
-.element.style  {
 }

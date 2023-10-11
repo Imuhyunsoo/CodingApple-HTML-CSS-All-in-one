@@ -1,4 +1,11 @@
 {
   "liveServer.settings.multiRootWorkspaceName": "HTML:CSS All-in-one",
-  "liveSassCompile.settings.autoprefix": []
+      "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionNane": ".min.css",
+          "savePath": "/styleSheet/css/scss-compile/"
+        }
+      ],
+      "liveSassCompile.settings.generateMap": true
 }

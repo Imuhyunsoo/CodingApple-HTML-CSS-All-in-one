@@ -1,0 +1,15 @@
+:root {
+    --main-color: red;
+}
+
+.background {
+  background: var(--main-color);
+  font-size: calc(40% - 20px);
+}
+
+.box {
+  color: #eeeeee;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=test.css.map */
