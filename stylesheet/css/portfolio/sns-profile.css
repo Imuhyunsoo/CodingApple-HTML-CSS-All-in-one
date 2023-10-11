@@ -1,16 +1,19 @@
+
+
 div {
     box-sizing: border-box;
     margin: auto;
 }
 
 body {
+    width: 100%;
     background: #f7f9fc;
     margin: 0px;
     height: 1800px;
 }
 
 .white-box {
-    width: 90%;
+
     background: white;
     align-items: center;
     border-radius: 10px;
@@ -30,6 +33,8 @@ body {
 .strong {
     font-weight: 500;
 }
+
+
 
 .btn {
     width: 100px;
@@ -76,4 +81,13 @@ body {
 
 .footer {
     text-align: center;
+}
+
+.friend-list_image img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.friend-title {
+    border-bottom: 2px solid gainsboro;
 }
