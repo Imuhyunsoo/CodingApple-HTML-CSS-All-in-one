@@ -1,0 +1,75 @@
+// 임시 클래스 : 단독으로 컴파일 되지 않는다.
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    @extend .btn;
+    color: green;
+}
+.btn-red {
+    @extend %btn;
+    color: red;
+}
+.btn-blue {
+    @extend %btn;
+    color: blue;
+}
+
+%box {
+    width: 200px;
+    height: 200px;
+    padding: 200px;
+}
+
+.box-green {
+    @extend %box;
+    background: green;
+}
+.box-red {
+    @extend %box;
+    background: red;
+}
+.box-blue {
+    @extend %box;
+    background: blue;
+}
+
+$main-color: #2a4cb2;
+$sub-color: #eeeeee;
+$basic-size: 16px;
+
+.background {
+    background: $main-color;
+    font-size: ($basic-size / 2px);
+}
+.box {
+    color: $sub-color;
+    font-size: $basic-size + 2px;
+}
+
+.main-bg h4 {
+    font-size: 16px;
+}
+.main-bg button {
+    color: red;
+}
+
+.main-bg {
+    width: 100px;
+    h4 {
+        font-size: 16px;
+    }
+    button {
+        color: red;
+    }
+}

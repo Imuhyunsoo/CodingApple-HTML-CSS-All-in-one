@@ -1,0 +1,69 @@
+.btn-blue, .btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn-blue {
+  color: blue;
+}
+
+.box-blue, .box-red, .box-green {
+  width: 200px;
+  height: 200px;
+  padding: 200px;
+}
+
+.box-green {
+  background: green;
+}
+
+.box-red {
+  background: red;
+}
+
+.box-blue {
+  background: blue;
+}
+
+.background {
+  background: #2a4cb2;
+  font-size: 8;
+}
+
+.box {
+  color: #eeeeee;
+  font-size: 18px;
+}
+
+.main-bg h4 {
+  font-size: 16px;
+}
+
+.main-bg button {
+  color: red;
+}
+
+.main-bg {
+  width: 100px;
+}
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}/*# sourceMappingURL=nesting.css.map */

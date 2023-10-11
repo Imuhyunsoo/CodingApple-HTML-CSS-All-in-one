@@ -1,15 +1,9 @@
-:root {
-    --main-color: red;
-}
-
 .background {
-  background: var(--main-color);
-  font-size: calc(40% - 20px);
+  background: #2a4cb2;
+  font-size: 8;
 }
 
 .box {
   color: #eeeeee;
   font-size: 18px;
-}
-
-/*# sourceMappingURL=test.css.map */
+}/*# sourceMappingURL=test.css.map */
