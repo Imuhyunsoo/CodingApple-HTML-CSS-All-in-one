@@ -1,0 +1,49 @@
+.ul-box li {
+  width: 500px;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+.ul-box .active {
+  background: lightblue;
+}
+
+.green-box {
+  padding: 15px;
+  border-radius: 5px;
+  background: lightgreen;
+  margin: 15px;
+}
+
+.blue-box {
+  padding: 15px;
+  border-radius: 5px;
+  background: lightblue;
+  margin: 15px;
+}
+
+.yellow-box {
+  padding: 15px;
+  border-radius: 5px;
+  background: lightyellow;
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  margin: 10px;
+}
+.row div {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+}
+.row .col-6 {
+  width: 50%;
+}
+.row .col-4 {
+  width: 33.33%;
+}
+.row .col-3 {
+  width: 25%;
+}/*# sourceMappingURL=layout.css.map */
