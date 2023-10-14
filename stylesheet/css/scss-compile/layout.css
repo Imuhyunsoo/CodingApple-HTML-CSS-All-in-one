@@ -1,28 +1,29 @@
 .ul-box li {
   width: 500px;
   list-style: none;
-  padding: 10px;
-  border: 1px solid gainsboro;
+  padding: 15px;
+  border: 1px solid #eee;
 }
 .ul-box .active {
-  background: lightblue;
+  background: skyblue;
+  color: white;
 }
 
-.green-box {
+.alert-box_green {
   padding: 15px;
   border-radius: 5px;
   background: lightgreen;
   margin: 15px;
 }
 
-.blue-box {
+.alert-box_blue {
   padding: 15px;
   border-radius: 5px;
   background: lightblue;
   margin: 15px;
 }
 
-.yellow-box {
+.alert-box_yellow {
   padding: 15px;
   border-radius: 5px;
   background: lightyellow;
@@ -33,17 +34,525 @@
   display: flex;
   margin: 10px;
 }
-.row div {
+.row .col-6 {
   padding: 10px;
   background: lavenderblush;
   border: 1px solid gainsboro;
-}
-.row .col-6 {
   width: 50%;
 }
 .row .col-4 {
-  width: 33.33%;
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 33.3333333333%;
 }
 .row .col-3 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
   width: 25%;
+}
+.row .col-1 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 8.3325%;
+}
+.row .col-2 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 16.665%;
+}
+.row .col-3 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 24.9975%;
+}
+.row .col-4 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 33.33%;
+}
+.row .col-5 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 41.6625%;
+}
+.row .col-6 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 49.995%;
+}
+.row .col-7 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 58.3275%;
+}
+.row .col-8 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 66.66%;
+}
+.row .col-9 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 74.9925%;
+}
+.row .col-10 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 83.325%;
+}
+.row .col-11 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 91.6575%;
+}
+.row .col-12 {
+  padding: 10px;
+  background: lavenderblush;
+  border: 1px solid gainsboro;
+  width: 99.99%;
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-1 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 8.3325%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-1 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 8.3325%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-1 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 8.3325%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-1 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 8.3325%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-2 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 16.665%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-2 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 16.665%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-2 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 16.665%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-2 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 16.665%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-3 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 24.9975%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-3 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 24.9975%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-3 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 24.9975%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-3 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 24.9975%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-4 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 33.33%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-4 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 33.33%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-4 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 33.33%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-4 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 33.33%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-5 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 41.6625%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-5 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 41.6625%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-5 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 41.6625%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-5 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 41.6625%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-6 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 49.995%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-6 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 49.995%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-6 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 49.995%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-6 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 49.995%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-7 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 58.3275%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-7 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 58.3275%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-7 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 58.3275%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-7 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 58.3275%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-8 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 66.66%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-8 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 66.66%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-8 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 66.66%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-8 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 66.66%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-9 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 74.9925%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-9 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 74.9925%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-9 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 74.9925%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-9 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 74.9925%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-10 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 83.325%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-10 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 83.325%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-10 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 83.325%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-10 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 83.325%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-11 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 91.6575%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-11 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 91.6575%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-11 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 91.6575%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-11 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 91.6575%;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-lg-12 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 99.99%;
+    color: blue;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .row .col-md-12 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 99.99%;
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row .col-sm-12 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 99.99%;
+    color: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row .col-xs-12 {
+    padding: 10px;
+    background: lavenderblush;
+    border: 1px solid gainsboro;
+    width: 99.99%;
+    color: white;
+  }
 }/*# sourceMappingURL=layout.css.map */

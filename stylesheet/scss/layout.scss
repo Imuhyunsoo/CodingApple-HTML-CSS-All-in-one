@@ -2,11 +2,12 @@
     li {
         width: 500px;
         list-style:none;
-        padding: 10px;
-        border: 1px solid gainsboro;
+        padding: 15px;
+        border: 1px solid #eee;
     }
     .active {
-        background: lightblue;
+        background: skyblue;
+        color: white;
     }
 }
 
@@ -17,15 +18,15 @@
     margin: 15px;
 }
 
-.green-box {
+.alert-box_green {
     @include alert-box(lightgreen)
 }
 
-.blue-box {
+.alert-box_blue {
     @include alert-box(lightblue)
 }
 
-.yellow-box {
+.alert-box_yellow {
     @include alert-box(lightyellow)
 }
 
@@ -33,21 +34,55 @@
     display: flex;
     margin: 10px;
 
-    div {
+    @mixin column($size) {
         padding: 10px;
         background: lavenderblush;
         border: 1px solid gainsboro;
+        width: $size;
     }
 
     .col-6 {
-        width: 50%;
+        @include column(50%)
     }
 
     .col-4 {
-        width: 33.33%;
+        @include column(100% / 3)
     }
 
     .col-3 {
-        width: 25%;
+        @include column(25%)
+    }
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            @include column(8.3325% * $i);
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @media screen and (min-width : 1200px) {
+                @include column(8.3325% * $i);
+                color: blue;
+            }
+        }
+        .col-md-#{$i} {
+            @media screen and (max-width : 1200px) {
+                @include column(8.3325% * $i);
+                color: red;
+            }
+        }
+        .col-sm-#{$i} {
+            @media screen and (max-width : 992px) {
+                @include column(8.3325% * $i);
+                color: green;
+            }
+        }
+        .col-xs-#{$i} {
+            @media screen and (max-width : 768px) {
+                @include column(8.3325% * $i);
+                color: white;
+            }
+        }
     }
 }
