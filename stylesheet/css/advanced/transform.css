@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+        /* margin-left: 100px  성능 문제로 tranform 사용 권장 */ 
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.button-blue {
+    padding: 15px;
+    font-size: 18px;
+    background: skyblue;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.button-blue:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+@keyframes shake {
+    20% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.plus {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.plus:hover {
+    animation-name: rotation;
+    animation-duration: 1s;
+}
+
+@keyframes rotation {
+    20% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(45deg) scale(2);
+    }
+}
