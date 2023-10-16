@@ -211,34 +211,38 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
+    padding: 25px;
+    z-index: 5;
+    text-align: right;
     height: 100%;
-    width: 100px;
+    width: 200px;
     background: black;
     color: white;
-    transition: width 1s;
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.menu-bar:hover .item {
+    animation-name: slide;
+    animation-duration: 1s;
 }
 
 .menu-bar:hover {
-    width: 300px;
-}
-
-.menu-bar:hover .menu{
-    animation-name: warp;
-    animation-delay: 0s;
+    transform: translateX(0px);
+    text-align: center;
 }
 
 
-@keyframes warp {
-    100% {
-        transform: translateX(100px);
+@keyframes slide {
+    0% {
+        transform: translateX(-250px);
     }
-}
-
-.menu-bar>.menu {
-    padding-left: 50px;
-}
-.menu-bar>.item {
-    margin-left: -150px;
+    50% {
+        transform: translateX(20px) skewX(-30deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 

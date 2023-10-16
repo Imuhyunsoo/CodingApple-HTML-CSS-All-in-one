@@ -29,20 +29,29 @@ body {
     background: skyblue;
     color: white;
     border-radius: 5px;
-    border: 0px;
+    border: none;
+    display: block;
+    margin: 30px;
 }
 
 .button-blue:hover {
     animation-name: shake;
     animation-duration: 0.5s;
+    animation-iteration-count: 3;
 }
 
 @keyframes shake {
-    20% {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
         transform: rotate(-10deg);
     }
-    60% {
+    50% {
         transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
     }
     100% {
         transform: rotate(0deg);
@@ -50,20 +59,26 @@ body {
 }
 
 .plus {
-    margin-top: 50px;
-    font-size: 50px;
+    margin: 150px auto;
+    font-size: 70px;
+    width: 85px;
+    cursor: pointer;
 }
 
 .plus:hover {
-    animation-name: rotation;
+    animation-name: turn;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes rotation {
-    20% {
-        transform: rotate(-20deg);
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
     }
     100% {
-        transform: rotate(45deg) scale(2);
+        transform: rotate(45deg) scale(1.5);
     }
 }
