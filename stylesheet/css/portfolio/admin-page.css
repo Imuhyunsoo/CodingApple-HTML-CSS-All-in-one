@@ -1,0 +1,121 @@
+div {
+    box-sizing: border-box;
+}
+
+html {
+    background: #eee;
+}
+
+body {
+    margin: 0px;
+    background: #eee !important;
+    display: flex;
+    height: 100vh;
+}
+
+.text-gray {
+    color: gray
+}
+
+.sidebar i {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 18px;
+}
+
+.sidebar {
+    width: 5%;
+    height: 100%;
+    background: lightslategrey;
+    color: white;
+}
+
+.search-btn {
+    background: lightslategray !important;
+    margin-left: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.search-btn i {
+    color: white;
+}
+
+.form-control {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.navbar {
+    height: 3.5% !important;
+}
+
+.badge-item {
+    float: left;
+    margin-right: 15px;
+}
+
+.badge-item i {
+    color: gray;
+    font-size: 18px;
+}
+
+.badge {
+    position: relative;
+    top: -13px;
+    left: -13px;
+    font-size: 9px !important;
+    background: red;
+}
+
+.nav-link {
+    color: gray !important;
+}
+
+.dashboard {
+    margin: auto;
+    width: 100%;
+
+}
+
+.board {
+    width: 22.5%;
+    max-width: 300px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-text {
+    width: 80%;
+    text-align: left;
+    float: left;
+    align-items: center;
+}
+
+
+.board-skyblue {
+    border-left: 5px solid skyblue;
+}
+.board-green {
+    border-left: 5px solid green;
+}
+.board-purple {
+    border-left: 5px solid purple;
+}
+.board-yellow {
+    border-left: 5px solid yellow;
+}
+
+.content {
+    width: 95%;
+}
