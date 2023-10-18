@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="/library/fontawesome/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -53,42 +54,112 @@
         <div>
           <h2 class="m-3">Dashboard</h2>
         </div>
-        <div class="container">
-          <div class="board board-skyblue">
-            <div class="board-text">
-              <span class="text-gray">Earnings (Mionthly)</span>
-              <h4>$400,000</h4>
-            </div>
-            <div class="board-icon">
-              <i class="fas fa-calendar fa-2x"></i>
+        <div class="board board-skyblue">
+          <div class="board-text">
+            <span class="text-gray">Earnings (Mionthly)</span>
+            <h4>$400,000</h4>
+          </div>
+          <div class="board-icon">
+            <i class="fas fa-calendar fa-2x"></i>
+          </div>
+        </div>
+        <div class="board board-green">
+          <div class="board-text">
+            <span class="text-gray">Earnings (Annual)</span>
+            <h4>$400,000</h4>
+          </div>
+          <div class="board-icon">
+            <i class="fas fa-dollar-sign fa-2x"></i>
+          </div>
+        </div>
+        <div class="board board-purple">
+          <div class="board-text">
+            <span class="text-gray">Tasks</span>
+            <h4>13</h4>
+          </div>
+          <div class="board-icon">
+            <i class="fas fa-list-ul fa-2x"></i>
+          </div>
+        </div>
+        <div class="board board-yellow">
+          <div class="board-text">
+            <span class="text-gray">Requests</span>
+            <h4>26</h4>
+          </div>
+          <div class="board-icon">
+            <i class="fas fa-comments fa-2x"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="chart m-3">
+          <div class="card">
+            <div class="card-header p-3">Earnings Overview</div>
+            <div class="card-body">
+              <canvas id="myChart"></canvas>
+
+              <script>
+                var ctx = document.getElementById("myChart").getContext("2d");
+                var myChart = new Chart(ctx, {
+                  type: "line",
+                  data: {
+                    labels: [
+                      "January",
+                      "February",
+                      "March",
+                      "April",
+                      "May",
+                      "June",
+                      "July",
+                    ],
+                    datasets: [
+                      {
+                        label: "# of Votes",
+                        data: [0, 10, 5, 2.5, 20, 30, 45],
+                        fill: true,
+                        backgroundColor: "lightslategray",
+                        borderColor: "reba(#004080,0.5)",
+                        borderWidth: 1,
+                      },
+                    ],
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                      },
+                    },
+                    elements: {
+                      line: {
+                        tension: 0.4,
+                        borderCapStyle: "round",
+                        borderWidth: 2,
+                      },
+                    },
+                  },
+                });
+              </script>
             </div>
           </div>
-          <div class="board board-green">
-            <div class="board-text">
-              <span class="text-gray">Earnings (Annual)</span>
-              <h4>$400,000</h4>
-            </div>
-            <div class="board-icon">
-              <i class="fas fa-dollar-sign fa-2x"></i>
-            </div>
-          </div>
-          <div class="board board-purple">
-            <div class="board-text">
-              <span class="text-gray">Tasks</span>
-              <h4>13</h4>
-            </div>
-            <div class="board-icon">
-              <i class="fas fa-list-ul fa-2x"></i>
-            </div>
-          </div>
-          <div class="board board-yellow">
-            <div class="board-text">
-              <span class="text-gray">Requests</span>
-              <h4>26</h4>
-            </div>
-            <div class="board-icon">
-              <i class="fas fa-comments fa-2x"></i>
-            </div>
+        </div>
+        <div class="task m-3">
+          <div class="card">
+            <div class="card-header p-3">Tasks</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Birrowed Items
+                <span style="float: right" class="badge bg-secondary">12</span>
+              </li>
+              <li class="list-group-item">
+                Trello requests
+                <span style="float: right" class="badge bg-secondary">2</span>
+              </li>
+              <li class="list-group-item">
+                Marjed Comments
+                <span style="float: right" class="badge bg-secondary">1</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
